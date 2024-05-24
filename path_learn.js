@@ -1,5 +1,5 @@
 // https://www.jb51.net/article/262631.htm
-
+//https://baijiahao.baidu.com/s?id=1775708745706137308&wfr=spider&for=pc
 //路径拼接path.join()
 const path4 = require('path');
 let pathStr = path4.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
@@ -26,11 +26,10 @@ const path2='/a/b/c/index.html'
 const fext = path.extname(path2)
 console.log(fext) // .html
 
-// 解析为绝对路径path.resolve()
+// 解析为绝对路径path.resolve(),path.resolve拼接规范的绝对路径
 // path.resolve() 该方法将一些的 路径/路径段 解析为绝对路径,语法格式如下:
 // path.resolve( [from…],to ) 注 ：将参数to位置的字符解析到一个绝对路径里，[from … ]为选填项，路径源；
-// from : 源路径
-// to : 将被解析到绝对路径的字符串
+// from : 源路径  to : 将被解析到绝对路径的字符串
 
 path.resolve('/foo/bar', './baz')   // returns '/foo/bar/baz'
 path.resolve('/foo/bar', 'baz')   // returns '/foo/bar/baz'
