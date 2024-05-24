@@ -24,6 +24,8 @@ console.log(myUrl.pathname); // return: '/path/'
 console.log(myUrl.search); // return: '?query=value'
 console.log(myUrl.hash); // return: ''
 
+
+
 myUrl.hash = 'section1';
 console.log(myUrl.href); // return: 'https://www.example.com/path/?query=value#section1'
 
